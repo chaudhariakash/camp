@@ -13,10 +13,13 @@ const userRoutes = require('./routes/users');
 const campgroundRoutes = require('./routes/campgrounds');
 const reviewRoutes = require('./routes/reviews');
 const mongoSanitize = require('express-mongo-sanitize');
-const dbUrl ="mongodb+srv://ouradmin:v1S0qs2zQ6LceGXI@cluster0.ahifw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+// const dbUrl ="mongodb+srv://ouradmin:v1S0qs2zQ6LceGXI@cluster0.ahifw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 // const dbUrl = 'mongodb://first_database_user:iSu2rEpua11nqbC2@cluster0.7euot.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 // mongodb://localhost:27017/camp
 // const Password = v1S0qs2zQ6LceGXI
+// const dbUrl = "mongodb+srv://admin:Fr2WwdBTPZhCavYg@project.ahifw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+
+const dbUrl = "mongodb://admin:Fr2WwdBTPZhCavYg@project-shard-00-00.ahifw.mongodb.net:27017,project-shard-00-01.ahifw.mongodb.net:27017,project-shard-00-02.ahifw.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-4ii7c8-shard-0&authSource=admin&retryWrites=true&w=majority"
 mongoose.connect(dbUrl, {
     useNewUrlParser: true,
     useCreateIndex: true,
