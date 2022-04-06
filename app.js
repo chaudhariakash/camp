@@ -18,7 +18,7 @@ const mongoSanitize = require('express-mongo-sanitize');
 // mongodb://localhost:27017/camp
 // const Password = v1S0qs2zQ6LceGXI
 // const dbUrl = "mongodb+srv://admin:Fr2WwdBTPZhCavYg@project.ahifw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
-
+// const new_pass = Fr2WwdBTPZhCavYg
 const dbUrl = "mongodb://admin:Fr2WwdBTPZhCavYg@project-shard-00-00.ahifw.mongodb.net:27017,project-shard-00-01.ahifw.mongodb.net:27017,project-shard-00-02.ahifw.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-4ii7c8-shard-0&authSource=admin&retryWrites=true&w=majority"
 mongoose.connect(dbUrl, {
     useNewUrlParser: true,
